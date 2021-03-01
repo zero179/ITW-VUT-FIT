@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#navigation, #about-1, #about-2, #hodnoceni, #excercise, footer {
+    max-width: 60vw;
+    margin: auto;
+}
+
+#nav-wrapper, #footer-wrapper {
+    background-color: #3c1f0a;
+}
+
+#nav-wrapper {
+    padding-top: 20px;
+}
+
+#navigation h1 {
+    color: #b6784b;
+    font-style: italic;
+}
+
+#navigation h1 a {
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+}
+
+#navigation ul li {
+    display: inline;
+    padding-right: 20px;
+    letter-spacing: .05em;
+}
+
+#navigation ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+#navigation ul li a:hover::after {
+    position: absolute;
+    display: block;
+    content: url("menu_bullet.gif");
+    bottom: -120%;
+    left:0;
+}
+
+#about {
+    line-height: 0;
+}
+
+#about-wrapper {
+background-image: linear-gradient(white, #e3e3e3);
+}
+
+#about-1 {
+    line-height: 1.7;
+    color: #686868;
+    padding-bottom: 80px;
+}
+
+#about-1 h2, #about-2 h2, #hodnoceni h2, #excercise h2 {
+    color: #b15e23;
+    padding-top: 20px;
+}
+
+#about-2 h3 a, #excercise h3 a {
+    color: #3c1f0a;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px dotted #bf8153;
+}
+
+table {
+    border: 3px solid black;
+    width: 700px;
+}
+
+th {
+    border-top: 2px dotted #411e08;
+    border-left: 2px dotted #411e08;
+    border-right: 2px solid #411e08;
+    border-bottom: 2px solid #411e08;
+    background-color: #d5a17c;
+    color: #656565;
+}
+
+td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid #b2b2b2;
+    text-align: center;
+}
+
+.name {
+    text-align: left;
+}
+
+#excercise img {
+    padding-right: 10px;
+}
+
+#excercise {
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #3c1f0a;
+    color: white;
+}
+
+#footer-wrapper {
+    padding: 10px;
+}
+
+#contact dl {
+    width: 300px;
+    text-align: right;
+}
+
+#contact dl dt {
+    text-align: left;
+    float: left;
+    width: 100px;
+    clear: left;
+}
+
+#contact dl dd a {
+    text-decoration: none;
+    color: #a37654;
+}
+#contact dl dd {
+    padding: 0 0 0.5em 0;
+    margin: 0 0 0 110px;
+}
+#adjacent ul li a {
+    text-decoration: none;
+    color: #d5a17c;
+}
+
+#adjacent ul {
+    list-style-image: url("footer_list_bullet.gif");
+    line-height: 1.7;
+}
