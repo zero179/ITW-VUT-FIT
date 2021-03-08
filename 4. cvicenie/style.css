@@ -1,0 +1,257 @@
+
+
+body {
+	background-image: url("bg.jpg");
+	background-repeat: repeat-x;
+}
+
+p {
+	line-height: 1.5;
+	color: #656565;
+	margin-top: 5px;
+}
+
+body, html, .footer {
+	font-family: Arial, Helvetica;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color:black;
+}
+
+nav li {
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section h2 {
+	color: #b15e23;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+section h3 {
+	margin: 0;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-image: url(footer_bg.gif);
+	background-repeat: repeat;
+}
+
+#prednasky a, #cviceni a {
+	color: #3c1f0a;
+	font-size: 16px;
+}
+
+#pre-main-heading {
+	margin-bottom: 0;
+	color: white;
+	font-style: italic;
+	font-size: 50px;
+}
+
+#main-heading {
+	margin-top:0;
+	font-size: 20px;
+}
+
+#main-heading a {
+	color:#b15e23;
+}
+
+.main-nav ul {
+	padding-left: 0;
+	padding-top: 25px;
+}
+
+.nav-list a {
+	font-size: 14px;
+	padding-right: 10px;
+	color: white;
+	position: relative;
+}
+
+#o-predmetu h2 {
+	margin-top: 35px;
+}
+
+#o-predmetu p {
+	font-size: 13px;
+	margin-bottom: 60px;
+}
+
+.main-nav ul li a:hover::after {
+	position: absolute;
+	display: block;
+	content: url("menu_bullet.gif");
+	bottom: -140%;
+	left: 35%;
+	margin: 0 auto;
+}
+
+#prednasky h3 {
+	border-bottom: 1px dotted #b15e23;
+}
+
+#cviceni .section-part {
+	border-bottom: 1px dotted #b15e23;
+	margin-bottom: 20px;
+}
+
+#cviceni .section-part img {
+	padding: 15px 0px;
+}
+
+#cviceni .section-part img {
+	float: left;
+	padding: 15px;
+}
+
+#cviceni .section-part p {
+	margin-top: 10px;
+}
+
+.results-table {
+	outline: 3px solid black;
+	width: 100%;
+	margin-left: 5px;
+}
+
+.results-table th {
+	color: #656565;
+	background: #d5a17c;
+	border: 3px dotted black;
+	border-bottom: 3px solid black;
+}
+
+.results-table td {
+	border-top: 2px solid black;
+	border-bottom: 2px solid lightgrey;
+}
+
+#kontakt h2, #souvisejici h2 {
+	color: white;
+}
+
+
+.contact-list dt {
+	color: white;
+	font-size: 12px;
+	float: left;
+	width: 100px;
+	text-align: left;
+}
+
+.contact-list dt:after {
+	content: ":";
+}
+
+.contact-list dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+	color: #d5a17c;
+	font-size: 14px;
+}
+
+.contact-list dd a {
+	color: #d5a17c;
+}
+
+.souvisejici-list a {
+	color: #d5a17c;
+}
+
+.souvisejici-list a:hover {
+	border-bottom: 1px solid #d5a17c;
+}
+
+.souvisejici-list ul {
+	padding-left: 25px;
+}
+
+.souvisejici-list li {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.souvisejici-list {
+	list-style-image: url(footer_list_bullet.gif);
+}
+
+.subsection {
+	padding: 10px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(40%, 60%) 1fr;
+	grid-auto-rows: minmax(50px, auto);
+	gap: 20px;
+}
+
+#cviceni p, #prednasky p, #prehled p {
+	font-size: 13px;
+	letter-spacing: .7px;
+}
+
+#prednasky {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#prehled {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#cviceni {
+	grid-column: 2;
+	grid-row: 1/4;
+	padding: 20px;
+	background: #f1f1f1;
+	background: linear-gradient(to right, #f1f1f1, #ffffff);
+}
+
+#prednasky h2 {
+	display: block;
+	width: 60%;
+}
+
+#kontakt {
+	margin-right: 150px;
+}
+
+.section-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: minmax(0, auto);
+}
+
+.subsection img {
+	float: left;
+}
+
+.section-right {
+	float: right;
+	width: 70%;
+}
+
+.footer {
+	display: flex;
+}
+
